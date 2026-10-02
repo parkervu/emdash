@@ -55,6 +55,7 @@ const previewLocaleLoaders: Record<string, () => Promise<Locale>> = {
 	th: () => import("date-fns/locale/th").then(({ th }) => th),
 	tr: () => import("date-fns/locale/tr").then(({ tr }) => tr),
 	uk: () => import("date-fns/locale/uk").then(({ uk }) => uk),
+	vi: () => import("date-fns/locale/vi").then(({ vi }) => vi),
 };
 
 function datePreview(pattern: string, locale: Locale): string | null {
